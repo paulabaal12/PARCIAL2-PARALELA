@@ -1,0 +1,52 @@
+{
+    "cleaning_config": {
+        "name": {
+            "type": "string_normalize",
+            "operation": [
+                "lower",
+                "strip"
+            ]
+        },
+        "age": {
+            "type": "missing_impute",
+            "strategy": "median"
+        },
+        "email": {
+            "type": "string_transform",
+            "operation": [
+                "lower"
+            ],
+            "validation": true
+        },
+        "country": {
+            "type": "dictionary_replace",
+            "dictionary_name": "country_mapping"
+        },
+        "salary": {
+            "type": "outlier_capping",
+            "method": "iqr_fence",
+            "cap_value": 1.5
+        }
+    },
+    "dictionaries": {
+        "country_mapping": {
+            "Guatemala": [
+                "Gutemala",
+                "GT",
+                "guate",
+                "miwate",
+                "guatemala"
+            ],
+            "Estados Unidos": [
+                "USA",
+                "US",
+                "Estados",
+                "Gringolandia"
+            ],
+            "Mexico": [
+                "MX",
+                "Mejico"
+            ]
+        }
+    }
+}
