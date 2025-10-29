@@ -1,0 +1,44 @@
+===== CleanStream Report (2025-10-29 14:39:07) =====
+Input file: /mnt/d/Documentos/GitHub/PARCIAL2-PARALELA/dirty_test.csv
+Processes: 1
+Total input rows (assigned): 10962
+Total imputed ages: 0
+Total salary values capped: 26
+Total final rows: 10962
+Salary bounds used: [-718132.68, 844555.71]
+Global mean age used for imputation: 42.107
+Elapsed (approx, max across ranks): 3.059 seconds
+=====================================
+
+===== CleanStream Report (2025-10-29 14:44:55) =====
+Input file: /mnt/d/Documentos/GitHub/PARCIAL2-PARALELA/dirty_test.csv
+Processes: 1
+Total input rows (assigned): 10962
+Total imputed ages: 0
+Total salary values capped: 26
+Total final rows: 10962
+Salary bounds used: [-718132.68, 844555.71]
+Global mean age used for imputation: 42.107
+Elapsed parallel (approx, max across ranks): 4.499 seconds
+Elapsed sequential (rank 0 run): 1.196 seconds
+Speedup (seq/parallel): 0.266x
+Sequential imputed ages: 0, capped salary: 26, rows: 10962
+Elapsed (approx, max across ranks): 4.499 seconds
+=====================================
+
+===== CleanStream Report (2025-10-29 14:50:46) =====
+Input file: dirty_200k.csv
+Processes: 4
+Total input rows (assigned): 219797
+Total imputed ages: 0
+Total salary values capped: 633
+Total final rows: 219797
+Salary bounds used: [-797358.01, 930168.01]
+Global mean age used for imputation: 41.673
+Elapsed parallel (approx, max across ranks): 58.057 seconds
+Elapsed sequential (rank 0 run): 24.215 seconds
+Speedup (seq/parallel): 0.417x
+Sequential imputed ages: 0, capped salary: 633, rows: 219797
+Elapsed (approx, max across ranks): 58.057 seconds
+=====================================
+
