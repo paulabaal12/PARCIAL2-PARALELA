@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def generate_dirty_dataset(n_rows=2_000_000, output_file='dirty_data.csv'):
+def generate_dirty_dataset(n_rows=15_000, output_file='dirty_data.csv'):
     np.random.seed(16)
     
     print(f"Generando dataset con {n_rows:,} filas...")
@@ -41,4 +41,4 @@ def generate_dirty_dataset(n_rows=2_000_000, output_file='dirty_data.csv'):
     return output_file
 
 if __name__ == '__main__':
-    generate_dirty_dataset(n_rows=2_000_000, output_file='dirty_data.csv')
+    generate_dirty_dataset(n_rows=15_000, output_file='dirty_data.csv')
