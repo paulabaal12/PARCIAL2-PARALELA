@@ -118,7 +118,11 @@ def clean (input_file):
     my_chunk['country'] = my_chunk['country'].replace({
         'Gutemala': 'Guatemala',
         'GT': 'Guatemala',
-        'guatemala': 'Guatemala'
+        'guatemala': 'Guatemala',
+        'USA': 'Estados Unidos',
+        'US': 'Estados Unidos',
+        'Gringolandia': 'Estados Unidos',
+        'Mejico': 'Mexico'
     })
     
     # Corregir outliers
